@@ -1,0 +1,33 @@
+{
+  "name": "n5-project-back",
+  "version": "1.0.0",
+  "description": "Project back N5",
+  "main": "index.js",
+  "scripts": {
+    "test": "start-test",
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohabarWil/n5-project-back.git"
+  },
+  "author": "Johabar",
+  "license": "Mit",
+  "bugs": {
+    "url": "https://github.com/JohabarWil/n5-project-back/issues"
+  },
+  "homepage": "https://github.com/JohabarWil/n5-project-back#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "custom-env": "^2.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongodb": "^3.6.4",
+    "mongoose": "^6.4.2",
+    "mongoose-paginate-v2": "^1.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
