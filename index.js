@@ -1,12 +1,16 @@
 const express = require('express');
+require('dotenv').config();
 const cors = require("cors");
 const {dbConnection} = require('./database/config');
 //
 const app = express();
 const server = require('http').createServer(app);
+//
 app.use(cors());
-const port = 9000;
 dbConnection();
+//
+const port = process.env.PORT_LOCAL;
+app.use(express.static('public'));
 // Router
 /**
  * raiz del api

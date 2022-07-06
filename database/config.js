@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const dbConnection = async () => {
     try {
-       await mongoose.connect('mongodb+srv://JohabarDbAtlas:JohabarBdMongoProjects@charactersdb.cupdyny.mongodb.net/projects_front', {
+       await mongoose.connect(process.env.CNN_STRING, {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
