@@ -21,6 +21,8 @@ const CharactersSchema = Schema({
 
 CharactersSchema.plugin(mongoosePaginate);
 module.exports = {
-    Character_Hp: model('Character_Hp', CharactersSchema),
-    Character_Rm: model('Character_Rm', CharactersSchema)
+    Character_Hp: model('Character_Hp', CharactersSchema, 'character_hp'),
+    Character_Rm: model('Character_Rm', CharactersSchema, 'character_rm'),
+    Character_Hp_En: model('Character_Hp_En', CharactersSchema, 'character_hp_en'),
+    Character_Rm_En: model('Character_Rm_En', CharactersSchema, 'character_rm_en')
 };
