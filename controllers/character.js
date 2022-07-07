@@ -1,9 +1,9 @@
 const {response} = require('express');
 const {Character_Hp, Character_Rm, Character_Hp_En, Character_Rm_En} = require('../models/Character');
 /**
- * de
- * @param req
- * @param res
+ * Get de listado de persosajes de Harry Potter
+ * @param req: Peticion y sus configuración
+ * @param res: respuesta al cliente
  * @returns {Promise<void>}
  */
 const getCharactersHp = async (req, res = response) => {
@@ -43,9 +43,9 @@ const getCharactersHp = async (req, res = response) => {
 }
 
 /**
- * de
- * @param req
- * @param res
+ * Grt para listado de personajes Rick y Morty
+ * @param req: peticion y config
+ * @param res: respuesta
  * @returns {Promise<void>}
  */
 const getCharactersRm = async (req, res = response) => {
